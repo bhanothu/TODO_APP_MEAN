@@ -1,0 +1,188 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* Light grayish background for a clean look */
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  /* Title Styling */
+  h1, h2 {
+    text-align: center;
+    color: #1c3d5d; /* Dark blue for a professional and calming look */
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Registration and Login Form */
+  .form-container {
+    margin-bottom: 40px;
+    background-color: #f9fafb; /* Light background for the form area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #1c3d5d;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #1c3d5d; /* Dark blue */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #16405a; /* Darker blue */
+  }
+  
+  button:active {
+    background-color: #0f3043; /* Even darker blue for active state */
+  }
+  
+  /* Todo List Styling */
+  .add-todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-todo-form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .add-todo-form button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    width: auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f4f8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  li button {
+    background-color: #e74c3c; /* Red for delete button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 12px;
+  }
+  
+  /* Completed Todo Styling */
+  .done {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+  
+  /* Error and Success Messages */
+  div {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  div[style*="color: red"] {
+    color: #e74c3c; /* Red for error messages */
+    font-size: 14px;
+  }
+  
+  div[style*="color: green"] {
+    color: #2ecc71; /* Green for success messages */
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    input[type="text"],
+    input[type="password"],
+    button {
+      font-size: 14px;
+    }
+  
+    .add-todo-form input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .add-todo-form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    li {
+      padding: 12px;
+      margin: 8px 0;
+    }
+  }
+  
